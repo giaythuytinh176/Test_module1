@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1 giai pt bac nhat</title>
+</head>
+<body>
+
+<script>
+    // pt bac 1: ax + b =0;
+    // Câu 1:  Xây dựng hàm giải phương trình bậc nhất, biết tham số là các hệ số nguyên a, b.
+    // Hàm trả về nghiệm của phương trình theo tham số đã cho.
+
+    function solvePTb1(a, b) {
+        if (a == 0) {
+            if (b != 0) {
+                return "pt vo nghiem";
+            }
+            if (b == 0) {
+                return "pt co vo so nghiem";
+            }
+        }
+        if (a != 0) {
+            return "pt co nghiem la x = " + (-b / a);
+        }
+    }
+
+    // Viết chương trình sử dụng hàm vừa xây dựng để giải phương trình bậc nhất với hệ số a = 5; b = 8
+    let a = 5;
+    let b = 8;
+    document.write(solvePTb1(a, b));
+
+
+</script>
+
+</body>
+</html>

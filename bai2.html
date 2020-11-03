@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+
+<script>
+    // Câu 2: Xây dựng hàm trả về vị trí của phần tử cần tìm trong một mảng chotrước
+    // (Giả sử tất cả các phần tử trong mảng không giống nhau).
+    // Hàm có 2 tham số: số phần tử cần tìm, mảng cho trước.
+    //
+    //
+    // function findPosition(x, arr) {
+    //     for (let i = 0; i < arr.length; i++) {
+    //         if (arr[i] === x) {
+    //             return i;
+    //         }
+    //     }
+    // }
+    //
+    // let arr = [12, 3, 4, 5, 199, 22];
+    // let x = 199;
+    // document.write(findPosition(x, arr));
+
+    // Viết chương trình với một mảng số nguyên được khởi tạo trước.
+    // Nhập vào một giá trị bất kỳ,
+    // sau đó kiểm tra xem giá trị số nguyên bất kỳ vừa nhập có nằm trong mảng đã nhập hay không.
+
+    function checkInArr(y, arr) {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === y){
+                return "So bat ky " + y + " nam trong mang";
+            }
+        }
+        return "So bat ky " + y + " ko nam trong mang";
+    }
+
+    let arr = [1,2,3,5,19];
+    let y = +prompt("Nhap so nguyen bat ky.");
+    document.write(checkInArr(y, arr));
+
+
+</script>
+
+
+</body>
+</html>
